@@ -17,7 +17,8 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    background: #ffffff url('../img/background.png'); /* Background pattern of a wooden table */
+    background-position: center; 
     font-family: 'Coda', cursive;
 }
 
@@ -26,11 +27,20 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Playwrite FR Moderne", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-weight: 300;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url('../img/h1-background.png');
+    background-size: 100%;
 }
 
 /*
@@ -91,14 +101,14 @@ h1 {
     margin-bottom: 10px;
 }
 
-.score-panel .stars {
+.score-panel .drops {
     margin: 0;
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
 }
 
-.score-panel .stars li {
+.score-panel .drops li {
     list-style: none;
     display: inline-block;
 }

@@ -6,32 +6,36 @@
     <meta name="description" content="">
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <h1>Match the Illustrations</h1>
-        </header>
-
-        <section class="score-panel">
-        	<ul class="drops">
-        		<li><i id = "drop1" class="fas fa-tint"></i></li>
-        		<li><i id = "drop2" class="fas fa-tint"></i></li>
-        		<li><i id = "drop3" class="fas fa-tint"></i></li>
-        	</ul>
-
-        	<span id="moves">0</span> Moves In
-
-        	<span id="timer">0 Minutes 0 Seconds</span>
-
-            <div class="restart" id="restart">
-        		<i class="fa fa-repeat"></i>
-        	</div>
-        </section>
-
+        <div class="score-container">
+            <header>
+                <h1>Match the Illustrations</h1>
+            </header>
+    
+            <section class="score-panel">
+                <ul class="drops">
+                    <li><i id = "drop1" class="fas fa-tint"></i></li>
+                    <li><i id = "drop2" class="fas fa-tint"></i></li>
+                    <li><i id = "drop3" class="fas fa-tint"></i></li>
+                </ul>
+    
+                <span id="moves">0</span> Moves In
+    
+                <span id="timer">0 Minutes 0 Seconds</span>
+    
+                <div class="restart" id="restart">
+                    <i class="fas fa-redo"></i>
+                </div>
+            </section>
+        </div>
         <ul id="deck">
             <li class="card">
                 <i class="fa fa-diamond"></i>

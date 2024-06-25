@@ -19,7 +19,8 @@ body {
 body {
     background: #ffffff url('../img/background.png'); /* Background pattern of a wooden table */
     background-position: center; 
-    font-family: 'Coda', cursive;
+    font-family: "Playwrite FR Moderne", cursive;
+    font-size: small;
 }
 
 .container {
@@ -30,17 +31,33 @@ body {
     overflow: hidden;
 }
 
+.score-container {
+    text-align:center;
+}
+
+.drops {
+    padding-right: 25px;
+}
+
+.score-panel {
+    padding: 10px;
+    margin: 0 auto;
+    background-image: url('../img/h1-background.png');
+    background-size: 100%;
+    background-position: center;
+}
+
 h1 {
-    font-family: "Playwrite FR Moderne", cursive;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-image: url('../img/h1-background.png');
     background-size: 100%;
+    background-position: center;
 }
 
 /*
@@ -50,7 +67,9 @@ h1 {
 #deck {
     width: 660px;
     min-height: 680px;
-    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    background-image: url('../img/h1-background.png');
+    background-size: 100%;
+    background-position: center;
     padding: 32px;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
@@ -105,7 +124,7 @@ h1 {
     margin: 0;
     padding: 0;
     display: inline-block;
-    margin: 0 5px 0 0;
+    margin: 0 16px 0 0;
 }
 
 .score-panel .drops li {

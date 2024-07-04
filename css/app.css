@@ -94,14 +94,28 @@ h1 {
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
+#deck .card img {
+    visibility: hidden;
+    height: 125px;
+    width: 125px;
+}
+
 #deck .card.open {
     transform: rotateY(0);
     background: #02b3e4;
     cursor: default;
 }
 
+#deck .card.open img {
+    visibility: visible;
+}
+
 #deck .card.open-show {
     font-size: 33px;
+}
+
+#deck .card.open-show img {
+    visibility: visible;
 }
 
 #deck .card.match {

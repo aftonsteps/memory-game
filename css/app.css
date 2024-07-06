@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/background.png'); /* Background pattern of a wooden table */
+    background: url('../img/background.png'); /* Background pattern of a wooden table */
     background-position: center; 
     font-family: "Playwrite FR Moderne", cursive;
     font-size: small;
@@ -55,7 +55,7 @@ h1 {
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-image: url('../img/h1-background.png');
+    background-image: url('../img/deck-background.png');
     background-size: 100%;
     background-position: center;
 }
@@ -67,7 +67,7 @@ h1 {
 #deck {
     width: 660px;
     min-height: 680px;
-    background-image: url('../img/h1-background.png');
+    background-image: url('../img/deck-background.png');
     background-size: 100%;
     background-position: center;
     padding: 32px;
@@ -84,7 +84,7 @@ h1 {
     height: 125px;
     width: 125px;
     background: #2e3d49;
-    font-size: 0;
+    font-size: 0; /* TODO take out once text is removed */
     color: #ffffff;
     border-radius: 8px;
     cursor: pointer;
@@ -98,11 +98,11 @@ h1 {
     visibility: hidden;
     height: 125px;
     width: 125px;
+    border-radius: 8px;
 }
 
 #deck .card.open {
     transform: rotateY(0);
-    background: #02b3e4;
     cursor: default;
 }
 
@@ -111,7 +111,7 @@ h1 {
 }
 
 #deck .card.open-show {
-    font-size: 33px;
+    font-size: 33px; /* TODO take out once text is removed */
 }
 
 #deck .card.open-show img {
@@ -120,8 +120,12 @@ h1 {
 
 #deck .card.match {
     cursor: default;
-    background: #02ccba;
-    font-size: 33px;
+}
+
+#deck .card.match img {
+    visibility: visible;
+    outline: 5px solid #0f5d12;
+    outline-offset: -10px;
 }
 
 /*

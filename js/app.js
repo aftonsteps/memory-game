@@ -55,7 +55,6 @@ Show the card if clicked, up to two cards at a time.
 */
 
  // CREDIT : Animations from * animate.css -http://daneden.me/animate. Copyright (c) 2018 Daniel Eden
-// Currently not implemented but will be in future versions.
 
 // Set up variables that will be resused
 var cards = document.getElementsByClassName("card");

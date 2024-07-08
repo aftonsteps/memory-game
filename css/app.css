@@ -94,6 +94,12 @@ h1 {
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
+#deck .card {
+    /* animation css */
+    animation: flipInY;
+    animation-duration: 2s;
+}
+
 #deck .card img {
     visibility: hidden;
     height: 125px;
@@ -104,6 +110,8 @@ h1 {
 #deck .card.open {
     transform: rotateY(0);
     cursor: default;
+    animation: shake;
+    animation-duration: 2s;
 }
 
 #deck .card.open img {
@@ -112,6 +120,8 @@ h1 {
 
 #deck .card.open-show {
     font-size: 33px; /* TODO take out once text is removed */
+    animation: flipInY;
+    animation-duration: 2s;
 }
 
 #deck .card.open-show img {
@@ -120,6 +130,8 @@ h1 {
 
 #deck .card.match {
     cursor: default;
+    animation: pulse;
+    duration: 1s;
 }
 
 #deck .card.match img {
